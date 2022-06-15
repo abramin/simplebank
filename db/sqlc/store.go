@@ -50,8 +50,6 @@ type TransferTxResult struct {
 	ToEntry     Entry    `json:"to_entry`
 }
 
-var txKey = struct{}{}
-
 func (store *Store) TransferTx(ctx context.Context, arg TransferTxParams) (TransferTxResult, error) {
 	var result TransferTxResult
 
